@@ -2,26 +2,14 @@
 
 ### Random2ch.cgi
 ### Random2ch本体
-### $Log: Random2ch.cgi,v $
-### Revision 1.3  2002/10/13 08:32:50  okada
-### ほとんど182さんのをコピペ(汗)して
-### Randam2ch.cgi
-### Random2ch.pl
-### linksFromHtml.pl
-### を統合/簡略化
-###
-### Revision 1.2  2002/09/12 18:12:33  okada
-### HTTP Heade出力部分を追加
-###
-### Revision 1.1.1.1  2002/09/11 22:14:05  okada
-###
+### $Id: Random2ch.cgi,v 1.4 2002/10/13 08:36:52 okada Exp $
 ###
 ###
 use Socket;
 eval {require 'jcode.pl'}
 or error('jcode.pl が見つかりません');
 
-#設定をハッシュにまとめた
+# 設定をハッシュにまとめた
 my %option = (
 			  httpPort     => 80,
 			  nameSubback  => 'subback.html',
