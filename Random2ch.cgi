@@ -2,7 +2,7 @@
 
 ### Random2ch.cgi
 ### Random2ch本体
-### $Id: Random2ch.cgi,v 1.8 2003/02/24 15:17:25 okada Exp $
+### $Id: Random2ch.cgi,v 1.9 2003/02/24 17:35:36 okada Exp $
 ###
 ###
 use strict;
@@ -39,7 +39,10 @@ Content-type: text/html; charset=EUC-JP
 <hr>
 	<p>
 		<a href="__BoardUrl__">__BoardName__</a>板の
-		<a href="__ThreadUrl__">__ThreadName__</a>スレ(__ThreadUrl__)へいってらっしゃい
+		<a href="__ThreadUrl__">__ThreadName__</a>スレへいってらっしゃい
+	</p>
+	<p>
+	__ThreadUrl__
 	</p>
 </body>
 </html>
