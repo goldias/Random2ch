@@ -2,10 +2,12 @@
 
 ### Random2ch.cgi
 ### Random2ch本体
-### $Id: Random2ch.cgi,v 1.6 2002/10/20 14:22:32 okada Exp $
+### $Id: Random2ch.cgi,v 1.7 2002/11/06 19:29:58 okada Exp $
 ###
 ###
+use strict;
 use Socket;
+
 eval {require 'jcode.pl'}
 or error('jcode.pl が見つかりません');
 
