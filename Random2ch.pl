@@ -2,6 +2,13 @@ package Random2ch;
 ####
 #### Random 2ch.pl
 #### $Log: Random2ch.pl,v $
+#### Revision 1.3  2002/09/12 18:28:19  okada
+#### xraにおいて、
+#### Can't locate ./linksFromHTML.pl at ./Random2ch.pl line 32.
+#### とエラーが表示された。
+#### line 32を./linksFromHtmlに変更
+#### 原因：自宅の環境がHFS+であったため、OS(MacOSX)が大文字と小文字を区別していなかった。
+####
 #### Revision 1.2  2002/09/12 02:42:54  okada
 #### Socket通信対応版
 ####
@@ -29,7 +36,7 @@ sub Random2ch{
 					   threadUrl  => '',
 					   );
 	
-	require "./linksFromHTML.pl";
+	require "./linksFromHtml.pl";
 	srand(time | $$); 
 	
 ###
