@@ -2,7 +2,7 @@
 
 ### Random2ch.cgi
 ### Random2ch本体
-### $Id: Random2ch.cgi,v 1.5 2002/10/13 13:02:50 okada Exp $
+### $Id: Random2ch.cgi,v 1.6 2002/10/20 14:22:32 okada Exp $
 ###
 ###
 use Socket;
@@ -71,7 +71,7 @@ exit;
 sub getLinks;
 sub getHtml;
 
-my %Link =();
+my %link =();
 
 # 板を決定
 {
