@@ -1,3 +1,11 @@
+2002-09-18 15:34  okada
+
+	* index.html (1.6): Content TYPE変更 WebSite明記 
+
+2002-09-16 12:57  okada
+
+	* ChangeLog (1.1): add ChangeLog 
+
 2002-09-13 04:36  okada
 
 	* index.html (1.5, release-0-2-1): s/At own your risk/At your own
@@ -31,10 +39,6 @@
 
 	* index.html (1.2): release-0-2に伴なう更新遍歴の変更 
 
-2002-09-12 11:50  okada
-
-	* tmp/README (1.2): [no log message] 
-
 2002-09-12 11:42  okada
 
 	* Random2ch.pl (1.2, release-0-2), test.pl (1.2): Socket通信対応版 
@@ -45,18 +49,18 @@
 
 2002-09-12 08:38  okada
 
-	* teamhtmlmakercnv2.pl (1.2), tmp/README (1.1): tmp/README added 
+	* teamhtmlmakercnv2.pl (1.2): tmp/README added 
 
 2002-09-12 07:20  okada
 
-	* .DS_Store (1.2), tmp/.DS_Store (1.2): remove .DS_Store 
+	* .DS_Store (1.2): remove .DS_Store 
 
 2002-09-12 07:14  okada
 
 	* .DS_Store (1.1), Random2ch.cgi (1.1), foot.html (1.1), head.html
 	(1.1), index.html (1.1), jcode.pl (1.1), linksFromHtml.pl (1.1),
 	perl.htm (1.1), Random2ch.pl (1.1), teamhtmlmakercnv2.pl (1.1),
-	test.pl (1.1), tmp/.DS_Store (1.1): Initial revision 
+	test.pl (1.1): Initial revision 
 
 2002-09-12 07:14  okada
 
@@ -68,6 +72,5 @@
 	(1.1.1.1, release-0-2-1, release-0-2, release-0-1), perl.htm
 	(1.1.1.1, release-0-1), Random2ch.pl (1.1.1.1, release-0-1),
 	teamhtmlmakercnv2.pl (1.1.1.1, release-0-1), test.pl (1.1.1.1,
-	release-0-1), tmp/.DS_Store (1.1.1.1) (utags: start): [no log
-	message] 
+	release-0-1) (utags: start): [no log message] 
 
