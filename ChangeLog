@@ -1,6 +1,15 @@
+2002-10-14 12:55  okada
+
+	* index.html (1.10): version番号間違い修正 
+
+2002-10-13 22:12  okada
+
+	* index.html (1.9, release-0-4): [no log message] 
+
 2002-10-13 22:07  okada
 
-	* memo.txt (1.4): [no log message] 
+	* memo.txt (1.4), ChangeLog (1.6) (utags: release-0-4): [no log
+	message] 
 
 2002-10-13 22:06  okada
 
@@ -8,7 +17,7 @@
 
 2002-10-13 22:02  okada
 
-	* Random2ch.cgi (1.5): machibbs対応 
+	* Random2ch.cgi (1.5, release-0-4): machibbs対応 
 
 2002-10-13 17:50  okada
 
@@ -144,12 +153,12 @@
 	release-0-1), foot.html (1.1.1.1, release-0-2-1b, release-0-2-1a,
 	release-0-2-1, release-0-2, release-0-1), head.html (1.1.1.1,
 	release-0-2, release-0-1), index.html (1.1.1.1, release-0-1),
-	jcode.pl (1.1.1.1, release-0-3, release-0-2-1b-branch-machi-2,
-	release-0-2-1b, release-0-2-1a, release-0-2-1, release-0-2,
-	release-0-1), linksFromHtml.pl (1.1.1.1, release-0-2-1b,
-	release-0-2-1a, release-0-2-1, release-0-2, release-0-1), perl.htm
-	(1.1.1.1, release-0-1), Random2ch.pl (1.1.1.1, release-0-1),
-	teamhtmlmakercnv2.pl (1.1.1.1, release-0-1), test.pl (1.1.1.1,
-	release-0-1), tmp/.DS_Store (1.1.1.1) (utags: start): [no log
-	message] 
+	jcode.pl (1.1.1.1, release-0-4, release-0-3,
+	release-0-2-1b-branch-machi-2, release-0-2-1b, release-0-2-1a,
+	release-0-2-1, release-0-2, release-0-1), linksFromHtml.pl
+	(1.1.1.1, release-0-2-1b, release-0-2-1a, release-0-2-1,
+	release-0-2, release-0-1), perl.htm (1.1.1.1, release-0-1),
+	Random2ch.pl (1.1.1.1, release-0-1), teamhtmlmakercnv2.pl (1.1.1.1,
+	release-0-1), test.pl (1.1.1.1, release-0-1), tmp/.DS_Store
+	(1.1.1.1) (utags: start): [no log message] 
 
