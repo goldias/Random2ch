@@ -2,7 +2,7 @@
 
 ### Random2ch.cgi
 ### Random2ch本体
-### $Id: Random2ch.cgi,v 1.4 2002/10/13 08:36:52 okada Exp $
+### $Id: Random2ch.cgi,v 1.5 2002/10/13 13:02:50 okada Exp $
 ###
 ###
 use Socket;
@@ -14,7 +14,8 @@ my %option = (
 			  httpPort     => 80,
 			  nameSubback  => 'subback.html',
 			  pathReadCgi  => 'test/read.cgi',
-			  regexNeedUrl => qr{^http://(?:[^.]+\.)+(?:2ch\.net|bbspink\.com)/\S+/$}i,
+			  regexNeedUrl => qr{^http://(?:[^.]+\.)+(?:2ch\.net|bbspink\.com|machibbs\.com)/\S+/$}i,
+			  #regexNeedUrl => qr{^http://(?:[^.]+\.)+(?:machibbs\.com)/\S+/$}i,
 			  replaceWords => [qw(BoardName BoardUrl ThreadName ThreadUrl)],
 			  urlBbsmenu   => 'http://www.ff.iij4u.or.jp/~ch2/bbsmenu.html',
 );
@@ -87,18 +88,25 @@ my %Link =();
 
 # スレを決定
 {
-	my $subback = $link{'BoardUrl'} . $option{'nameSubback'};
-	my %thread  = %{ getLinks getHtml $subback, $option{'httpPort'} };
 
-	my @key = keys %thread;
-	$link{'ThreadName'} = $key[int(rand 2000) % $#key];
+		my $subback = $link{'BoardUrl'} . $option{'nameSubback'};
+		my %thread  = %{ getLinks getHtml $subback, $option{'httpPort'} };
 
-	my($server, $bbs) = ($link{'BoardUrl'} =~ m|^http://([^/]+)/([^/]+)/$|i);
-	$link{'ThreadUrl'} = join '/', (
-		'http:/', $server, $option{'pathReadCgi'},
-		$bbs, $thread{$link{'ThreadName'}}
-	);
+		my @key = keys %thread;
+		$link{'ThreadName'} = $key[int(rand 2000) % $#key];
 
+		my($server, $bbs) = ($link{'BoardUrl'} =~ m|^http://([^/]+)/([^/]+)/$|i);
+
+	if ($link{'BoardUrl'} =~ m/(?:2ch|bbspink)/) {
+		$link{'ThreadUrl'} = join '/', (
+			   'http:/', $server, $option{'pathReadCgi'},
+			   $bbs, $thread{$link{'ThreadName'}}
+		);
+	}elsif($link{'BoardUrl'} =~ m/(?:machibbs)/o) {
+		$link{'ThreadUrl'} = join '/', (
+			   'http:/', $server, $thread{$link{'ThreadName'}} =~ m|^\.\./(.*)|
+		);
+	}
 }
 
 # 結果を出力
