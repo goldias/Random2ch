@@ -2,6 +2,9 @@ package Random2ch;
 ####
 #### Random 2ch.pl
 #### $Log: Random2ch.pl,v $
+#### Revision 1.4  2002/09/26 10:33:42  okada
+#### 不用なコメント除去
+####
 #### Revision 1.3  2002/09/12 18:28:19  okada
 #### xraにおいて、
 #### Can't locate ./linksFromHTML.pl at ./Random2ch.pl line 32.
@@ -13,9 +16,6 @@ package Random2ch;
 #### Socket通信対応版
 ####
 #### Revision 1.1.1.1  2002/09/11 22:14:06  okada
-####
-####
-####
 ####
 
 sub Random2ch{
@@ -43,16 +43,6 @@ sub Random2ch{
 ### main section
 ###
 
-## Bord link from bbsmenu.html
-##
-#	getFromHttp($urlBbsMenu , $filePathHtmlBbsMenu);
-#
-#	open (BBSMENU, "$filePathHtmlBbsMenu");
-#	
-#	while(<BBSMENU>){
-#		$strHtmlTmp .= $_
-#		}
-#	close BBSMENU;
 
 	$strHtmlTmp = getFromHttpWithSocket($urlBbsMenu , $filePathHtmlBbsMenu);
 	%Bords = linksFromHTML::linksFromHTML($strHtmlTmp);
@@ -76,12 +66,6 @@ sub Random2ch{
 	
 ## Thread link from subback.html
 ##
-#	getFromHttp( $structMyThread{bordUrl} ."subback.html" , $filePathHtmlSubBack);
-#	open(SUBBACK, "$filePathHtmlSubBack");
-#	while(<SUBBACK>){
-#		$strHtmlTmp .= $_;
-#	}
-#	close SUBBACK;
 
 	$strHtmlTmp = 
 		getFromHttpWithSocket( $structMyThread{bordUrl} ."subback.html" , $filePathHtmlSubBack);
@@ -153,11 +137,6 @@ sub getFromHttpWithSocket{
 	$str
 }
 
-#sub printHTML{
-#	my(%structThread) = @_;
-#	print %stuructThread;
-#
-#}
 	  
 sub makeThreadUrl{
 	my($threadUrlSuffix,$bordUrl) = @_;
