@@ -1,6 +1,10 @@
+2002-09-18 15:40  okada
+
+	* ChangeLog (1.2, release-0-2-1a): [no log message] 
+
 2002-09-18 15:34  okada
 
-	* index.html (1.6): Content TYPE変更 WebSite明記 
+	* index.html (1.6, release-0-2-1a): Content TYPE変更 WebSite明記 
 
 2002-09-16 12:57  okada
 
@@ -17,19 +21,21 @@
 
 2002-09-13 03:28  okada
 
-	* Random2ch.pl (1.3, release-0-2-1): xraにおいて、 Can't locate
-	./linksFromHTML.pl at ./Random2ch.pl line 32.  
+	* Random2ch.pl (1.3, release-0-2-1a, release-0-2-1): xraにおいて、 
+	Can't locate ./linksFromHTML.pl at ./Random2ch.pl line 32.  
 	とエラーが表示された。 line 32を./linksFromHtmlに変更 
 	
 	原因：自宅の環境がHFS+であったため、OS(MacOSX)が大文字と小文字を区別していなかった。
 
 2002-09-13 03:13  okada
 
-	* head.html (1.2, release-0-2-1): HTTP Heade出力部分を削除 
+	* head.html (1.2, release-0-2-1a, release-0-2-1): HTTP
+	Heade出力部分を削除 
 
 2002-09-13 03:12  okada
 
-	* Random2ch.cgi (1.2, release-0-2-1): HTTP Heade出力部分を追加 
+	* Random2ch.cgi (1.2, release-0-2-1a, release-0-2-1): HTTP
+	Heade出力部分を追加 
 
 2002-09-12 12:40  okada
 
@@ -65,12 +71,13 @@
 2002-09-12 07:14  okada
 
 	* .DS_Store (1.1.1.1), Random2ch.cgi (1.1.1.1, release-0-2,
-	release-0-1), foot.html (1.1.1.1, release-0-2-1, release-0-2,
-	release-0-1), head.html (1.1.1.1, release-0-2, release-0-1),
-	index.html (1.1.1.1, release-0-1), jcode.pl (1.1.1.1,
-	release-0-2-1, release-0-2, release-0-1), linksFromHtml.pl
-	(1.1.1.1, release-0-2-1, release-0-2, release-0-1), perl.htm
-	(1.1.1.1, release-0-1), Random2ch.pl (1.1.1.1, release-0-1),
-	teamhtmlmakercnv2.pl (1.1.1.1, release-0-1), test.pl (1.1.1.1,
-	release-0-1) (utags: start): [no log message] 
+	release-0-1), foot.html (1.1.1.1, release-0-2-1a, release-0-2-1,
+	release-0-2, release-0-1), head.html (1.1.1.1, release-0-2,
+	release-0-1), index.html (1.1.1.1, release-0-1), jcode.pl (1.1.1.1,
+	release-0-2-1a, release-0-2-1, release-0-2, release-0-1),
+	linksFromHtml.pl (1.1.1.1, release-0-2-1a, release-0-2-1,
+	release-0-2, release-0-1), perl.htm (1.1.1.1, release-0-1),
+	Random2ch.pl (1.1.1.1, release-0-1), teamhtmlmakercnv2.pl (1.1.1.1,
+	release-0-1), test.pl (1.1.1.1, release-0-1) (utags: start): [no
+	log message] 
 
