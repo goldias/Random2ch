@@ -1,6 +1,0 @@
-このディレクトリの権限を777にしましょう
-
-% pwd
-/hoge/hoge/Random2ch
-% chmod 777 tmp
-
